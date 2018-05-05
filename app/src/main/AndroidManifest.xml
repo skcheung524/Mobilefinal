@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MySQLiteHelper" />
-        <activity android:name=".ShowRecord"></activity>
+        <activity android:name=".ShowRecord" />
+        <activity android:name=".InsertScreen"></activity>
     </application>
 
 </manifest>

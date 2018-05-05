@@ -1,111 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="100dp"
-    android:layout_height="20dp"
-    android:layout_marginBottom="16dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="8dp"
-    android:text="Expenses:"
-    app:layout_constraintBottom_toTopOf="@+id/editTextExpenses"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0" />
+    <!--testing out picture-->
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Budget Planner"
+        android:textColor="#1c80e4"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<EditText
-    android:id="@+id/editTextExpenses"
-    android:layout_width="200dp"
-    android:layout_height="20dp"
-    android:layout_below="@+id/textView"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="28dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="16dp"
-    android:ems="10"
-    android:inputType="numberDecimal"
-    app:layout_constraintBottom_toTopOf="@+id/textView2"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent" />
+    <ImageButton
+        android:id="@+id/imageButtonNew"
+        android:layout_width="215dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/newitem"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonViewList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
-
-<TextView
-    android:id="@+id/textView2"
-    android:layout_width="100dp"
-    android:layout_height="20dp"
-    android:layout_marginBottom="16dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="16dp"
-    android:text="$$:"
-    app:layout_constraintBottom_toTopOf="@+id/editTestCost"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent" />
-
-<EditText
-    android:id="@+id/editTestCost"
-    android:layout_width="200dp"
-    android:layout_height="25dp"
-    android:layout_below="@+id/editTextExpenses"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="128dp"
-    android:ems="10"
-    android:gravity="center"
-    android:inputType="numberDecimal"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.037" />
-
-
-<Button
-    android:id="@+id/button"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:text="Insert into planner"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editTextNotes" />
-
-
-<EditText
-    android:id="@+id/editTextNotes"
-
-    android:layout_width="345dp"
-    android:layout_height="187dp"
-    android:layout_below="@+id/textView"
-    android:layout_centerHorizontal="true"
-    android:layout_marginEnd="8dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="28dp"
-    android:ems="10"
-    android:gravity="center"
-    android:hint="Notes"
-    android:inputType="text"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editTestCost" />
+    <ImageButton
+        android:id="@+id/imageButtonViewList"
+        android:layout_width="280dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
