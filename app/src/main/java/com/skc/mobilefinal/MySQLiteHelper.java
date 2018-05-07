@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "Planner";
+    public static final String DATABASE_NAME = "Tracker";
     public static final String ID = "id";
     public static final String NAME = "name";
     public static final String MONEY = "money";
@@ -55,7 +55,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         long result = database.insert(TABLE_NAME, null, values);
 
         // the database will return -1 if insert query was unsuccessful
-        return (result == -1);
+        return (result != -1);
     }
 
     public Cursor getAllData() {

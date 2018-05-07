@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="Budget Planner"
+        android:text="Budget Tracker"
         android:textColor="#1c80e4"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
