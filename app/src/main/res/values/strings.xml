@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mobilefinal</string>
+    <string name="id">ID: </string>
+    <string name="places">Expenses(Activity Name):</string>
+    <string name="money">$$: </string>
+    <string name="notes">Notes</string>
+    <string name="insert">Insert into Tracker</string>
+    <string name="update">Update data</string>
+    <string name="delete">Delete data </string>
 </resources>
