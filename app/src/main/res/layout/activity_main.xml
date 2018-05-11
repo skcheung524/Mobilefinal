@@ -11,16 +11,16 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Budget Tracker"
-        android:textColor="#1c80e4"
-        android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Budget Tracker"
+                    android:textColor="#1c80e4"
+                    android:textSize="25dp" />
 
-        <ImageButton
+                <ImageButton
         android:id="@+id/imageButtonNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

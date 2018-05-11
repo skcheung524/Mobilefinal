@@ -1,12 +1,10 @@
 package com.skc.mobilefinal;
 
-import android.database.sqlite.SQLiteOpenHelper;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -17,6 +15,11 @@ public class InsertScreen extends AppCompatActivity {
     Button insertData;
     Button updateData;
     Button deleteData;
+
+    public static final String ID_KEY = "id";
+    public static final String NAME_KEY = "name";
+    public static final String MONEY_KEY = "money";
+    public static final String NOTES_KEY = "notes";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,17 @@ public class InsertScreen extends AppCompatActivity {
         editMoney = (EditText) findViewById(R.id.editTextCost);
         editNotes = (EditText) findViewById(R.id.editTextNotes);
         editID = (EditText) findViewById(R.id.editTextID);
+
+
+        // try to get info from Bundle
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            //we have extras, populate fields
+            editID.setText(extras.getString(ID_KEY));
+            editName.setText(extras.getString(NAME_KEY));
+            editMoney.setText(extras.getString(MONEY_KEY));
+            editNotes.setText(extras.getString(NOTES_KEY));
+        }
 
 
         insertData.setOnClickListener(new View.OnClickListener() {
